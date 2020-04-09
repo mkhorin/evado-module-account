@@ -1,0 +1,23 @@
+<% layout(_view.get('_layout/list')) %>
+
+<% block('title', 'Notifications') %>
+
+<%- include(_view.get('_part/list/grid'), {
+    data: {
+        columns: [{
+            name: 'read',
+            format: 'boolean',
+            sortable: true
+        },{
+            name: 'subject',
+            searchable: true,
+            owner: 'message'
+        },{
+            name: 'sentAt',
+            format: 'timestamp'
+        }],
+        order: {[model.PK]: -1},
+        filter: {},
+        create: null
+    }
+}) %>

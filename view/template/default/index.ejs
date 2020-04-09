@@ -1,0 +1,36 @@
+<% layout(_view.get('_layout/content')) %>
+
+<% block('title', 'Basic info') %>
+
+<div class="model-view model form-horizontal form">
+    <div class="form-attr form-group">
+        <label class="control-label col-sm-2" data-t="">Name</label>
+        <div class="col-sm-10">
+            <div class="form-control-static">
+                <%- model.getTitle() %>
+            </div>
+        </div>
+    </div>
+    <div class="form-attr form-group">
+        <label class="control-label col-sm-2">Email</label>
+        <div class="col-sm-10">
+            <div class="form-control-static">
+                <%- model.getEmail() %>
+            </div>
+        </div>
+    </div>
+    <div class="form-attr form-group">
+        <label class="control-label col-sm-2" data-t="">Assigned roles</label>
+        <div class="col-sm-10">
+            <div class="form-control-static">
+                <%- _controller.user.getAssignmentTitles().join(', ') %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="mt10">
+    <a href="auth/change-password" class="btn-primary btn" data-t="">Change password</a>
+</div>
