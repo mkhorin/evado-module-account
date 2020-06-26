@@ -1,7 +1,7 @@
 {
   "name": "evado-module-account",
-  "version": "1.2.0",
-  "description": "Evado module for business application user account",
+  "version": "1.5.0",
+  "description": "Evado application user account module",
   "author": {
     "name": "Maxim Khorin",
     "email": "maksimovichu@gmail.com"

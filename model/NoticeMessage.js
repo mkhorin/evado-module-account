@@ -12,8 +12,8 @@ module.exports = class NoticeMessage extends Base {
         return this.hasOne(Class, Class.PK, 'notice');
     }
 
-    relRecipients () {
-        const Class = this.getClass('model/Recipient');
+    relPopupNotifications () {
+        const Class = this.getClass('model/PopupNotification');
         return this.hasMany(Class, 'message', this.PK).deleteOnUnlink();
     }
 };
