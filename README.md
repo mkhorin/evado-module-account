@@ -1,5 +1,5 @@
 # Evado Account
 
-### Evado module for business application user account
+### Evado application user account module
 
 [Evado Platform](https://github.com/mkhorin/evado)
