@@ -2,4 +2,4 @@
 
 ### Evado application user account module
 
-[Evado Platform](https://github.com/mkhorin/evado)
+[Evado Framework](https://github.com/mkhorin/evado)
