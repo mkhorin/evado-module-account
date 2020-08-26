@@ -18,7 +18,9 @@ module.exports = class DefaultController extends Base {
 
     actionIndex () {
         return this.render('index', {
-            model: this.user.getIdentity()
+            model: this.user.getIdentity(),
+            changePasswordUrl: this.module.getParam('changePasswordUrl'),
+            enablePasswordChange: this.module.getParam('enablePasswordChange')
         });
     }
 };

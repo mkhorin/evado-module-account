@@ -32,5 +32,7 @@
 <hr>
 
 <div class="mt10">
-    <a href="auth/change-password" class="btn-primary btn" data-t="">Change password</a>
+    <% if (enablePasswordChange) { %>
+    <a href="<%- changePasswordUrl %>" class="btn-primary btn" data-t="">Change password</a>
+    <% } %>
 </div>
