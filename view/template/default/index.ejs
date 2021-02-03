@@ -1,29 +1,32 @@
 <% layout(_view.get('_layout/content')) %>
-
 <% block('title', 'Basic info') %>
 
-<div class="model-view model form-horizontal form">
-    <div class="form-attr form-group">
-        <label class="control-label col-sm-2" data-t="">Name</label>
-        <div class="col-sm-10">
-            <div class="form-control-static">
-                <%- model.getTitle() %>
+<div class="row">
+    <div class="col-lg-8">
+        <div class="model-view model form">
+            <div class="form-attr form-row">
+                <label class="col-md-3 col-form-label" data-t="">Name</label>
+                <div class="col-md-9">
+                    <div class="form-control-plaintext">
+                        <%- model.getTitle() %>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="form-attr form-group">
-        <label class="control-label col-sm-2">Email</label>
-        <div class="col-sm-10">
-            <div class="form-control-static">
-                <%- model.getEmail() %>
+            <div class="form-attr form-row">
+                <label class="col-md-3 col-form-label">Email</label>
+                <div class="col-md-9">
+                    <div class="form-control-plaintext">
+                        <%- model.getEmail() %>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="form-attr form-group">
-        <label class="control-label col-sm-2" data-t="">Assigned roles</label>
-        <div class="col-sm-10">
-            <div class="form-control-static">
-                <%- _controller.user.getAssignmentTitles().join('<br>') %>
+            <div class="form-attr form-row">
+                <label class="col-md-3 col-form-label" data-t="">Assigned roles</label>
+                <div class="col-md-9">
+                    <div class="form-control-plaintext">
+                        <%- _controller.user.getAssignmentTitles().join('<br>') %>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -31,8 +34,8 @@
 
 <hr>
 
-<div class="mt10">
+<div class="mt-4">
     <% if (enablePasswordChange) { %>
-    <a href="<%- changePasswordUrl %>" class="btn-primary btn" data-t="">Change password</a>
+    <a href="<%- changePasswordUrl %>" class="btn-info btn" data-t="">Change password</a>
     <% } %>
 </div>

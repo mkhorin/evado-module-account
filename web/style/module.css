@@ -1,4 +1,6 @@
 
-.skin-yellow-light .sidebar-menu > li.active > a {
-    border-left-color: #f39c12;
+body {
+    --nav-item-acsent-color: var(--light-primary);
+    --navbar-color: #0865d8;
+    --super-navbar-color: #0654b7;
 }

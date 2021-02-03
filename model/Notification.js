@@ -3,9 +3,9 @@
  */
 'use strict';
 
-const Base = require('evado/component/notifier/Notice');
+const Base = require('evado/component/notifier/Notification');
 
-module.exports = class Notice extends Base {
+module.exports = class Notification extends Base {
 
 };
 module.exports.init(module);

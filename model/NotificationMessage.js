@@ -3,13 +3,13 @@
  */
 'use strict';
 
-const Base = require('evado/component/notifier/NoticeMessage');
+const Base = require('evado/component/notifier/NotificationMessage');
 
-module.exports = class NoticeMessage extends Base {
+module.exports = class NotificationMessage extends Base {
 
-    relNotice () {
-        const Class = this.getClass('model/Notice');
-        return this.hasOne(Class, Class.PK, 'notice');
+    relNotification () {
+        const Class = this.getClass('model/Notification');
+        return this.hasOne(Class, Class.PK, 'notification');
     }
 
     relPopupNotifications () {

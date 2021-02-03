@@ -5,7 +5,7 @@
 
 module.exports = {
 
-    'model/Notice': require('../model/Notice'),
-    'model/NoticeMessage': require('../model/NoticeMessage'),
+    'model/Notification': require('../model/Notification'),
+    'model/NotificationMessage': require('../model/NotificationMessage'),
     'model/PopupNotification': require('../model/PopupNotification')
 };
