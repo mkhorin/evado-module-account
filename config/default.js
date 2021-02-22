@@ -11,11 +11,6 @@ module.exports = {
         'i18n': {
         }
     },
-    widgets: {
-        'sideMenu': {
-            Class: require('evado/component/widget/SideMenu')
-        }
-    },
     classes: require('./default-classes'),
     indexes: [],
     sideMenu: require('./default-sideMenu')
