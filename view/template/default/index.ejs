@@ -2,27 +2,27 @@
 <% block('title', 'Basic info') %>
 
 <div class="row">
-    <div class="col-lg-8">
+    <div class="col-xl-9">
         <div class="model-view model form">
-            <div class="form-attr form-row">
-                <label class="col-md-3 col-form-label" data-t="">Name</label>
-                <div class="col-md-9">
+            <div class="form-attr form-group row">
+                <label class="col-lg-3 col-form-label" data-t="">Name</label>
+                <div class="col-lg-9">
                     <div class="form-control-plaintext">
                         <%- model.getTitle() %>
                     </div>
                 </div>
             </div>
-            <div class="form-attr form-row">
-                <label class="col-md-3 col-form-label">Email</label>
-                <div class="col-md-9">
+            <div class="form-attr form-group row">
+                <label class="col-lg-3 col-form-label">Email</label>
+                <div class="col-lg-9">
                     <div class="form-control-plaintext">
                         <%- model.getEmail() %>
                     </div>
                 </div>
             </div>
-            <div class="form-attr form-row">
-                <label class="col-md-3 col-form-label" data-t="">Assigned roles</label>
-                <div class="col-md-9">
+            <div class="form-attr form-group row">
+                <label class="col-lg-3 col-form-label" data-t="">Assigned roles</label>
+                <div class="col-lg-9">
                     <div class="form-control-plaintext">
                         <%- _controller.user.getAssignmentTitles().join('<br>') %>
                     </div>
@@ -36,6 +36,6 @@
 
 <div class="mt-4">
     <% if (enablePasswordChange) { %>
-    <a href="<%- changePasswordUrl %>" class="btn-info btn" data-t="">Change password</a>
+    <a href="<%- changePasswordUrl %>" class="btn-outline-secondary btn" data-t="">Change password</a>
     <% } %>
 </div>
