@@ -1,6 +1,7 @@
-<% layout(_view.get(_layout)) %>
-
-<% block('title', 'Notification') %>
+<%
+layout(_view.get(_layout));
+block('title', 'Notification');
+%>
 
 <%- include(_view.get('_part/attr/checkbox'), {
     attr: 'read'
