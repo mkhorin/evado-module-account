@@ -1,16 +1,16 @@
-
+<!-- notification/filter --> 
 <%- include(_view.get('_part/list/filter'), {
-    data: {
-        columns: [{
-            name: 'read',
-            type: 'boolean'
-        },{
-            name: 'subject',
-            owner: 'message'
-        },{
-            name: 'sentAt',
-            type: 'date',
-            owner: 'message'
-        }]
-    }
+  data: {
+    columns: [{
+      name: 'read',
+      type: 'boolean'
+    },{
+      name: 'subject',
+      owner: 'message'
+    },{
+      name: 'sentAt',
+      type: 'date',
+      owner: 'message'
+    }]
+  }
 }) %>

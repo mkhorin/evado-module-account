@@ -1,6 +1,5 @@
-
 body {
-    --nav-item-acsent-color: var(--light-primary);
-    --navbar-color: #0865d8;
-    --super-navbar-color: #0654b7;
+  --nav-item-acsent-color: var(--light-primary);
+  --navbar-color: #0865d8;
+  --super-navbar-color: #0654b7;
 }

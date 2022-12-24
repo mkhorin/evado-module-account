@@ -2,20 +2,19 @@
 layout(_view.get(_layout));
 block('title', 'Notification');
 %>
-
 <%- include(_view.get('_part/attr/checkbox'), {
-    attr: 'read'
+  attr: 'read'
 }) %>
 
 <%- include(_view.get('_part/attr/static'), {
-    attr: 'subject'
+  attr: 'subject'
 }) %>
 
 <%- include(_view.get('_part/attr/static'), {
-    attr: 'text'
+  attr: 'text'
 }) %>
 
 <%- include(_view.get('_part/attr/static'), {
-    attr: 'sentAt',
-    format: 'timestamp'
+  attr: 'sentAt',
+  format: 'timestamp'
 }) %>
